@@ -1,0 +1,22 @@
+print('KALKULATOR')
+print('Dostępne działania:')
+print('1. Dodawanie')
+print('2. Odejmowanie')
+print('3. Mnożenie')
+print('4. Dzielenie')
+print('5. Potęgowanie (druga liczba stanowi potęgę)')
+a = float(input('Podaj pierwszą liczbę i naciśnij enter: '))
+b = float(input('Podaj drugą liczbę i naciśnij enter: '))
+działanie = input('Wybierz numer działania, które chcesz wykonać i naciśnij enter: ')
+if działanie == '1':
+    print('Wynik:',a+b)
+elif działanie == '2':
+    print('Wynik:', a-b)
+elif działanie == '3':
+    print('Wynik:', a*b)
+elif działanie == '4':
+    print('Wynik:', a/b)
+elif działanie == '5':
+    print('Wynik:', a**b)
+else:
+    print('Nie ma takiego działanie, wybierz numer działania')
