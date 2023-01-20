@@ -1,0 +1,14 @@
+#Tabela ASCII, każdej literce zostały przypisane numeryczne wartości
+
+#for i in range(32, 127):
+#  print(i, chr(i))
+
+#Hasło zawiera .. znaków
+import random 
+ints = range(33, 127)
+password = ''
+
+for i in range(8): #jak długie ma być hasło
+    password += chr(random.choice(ints))
+    
+print('Password is:', password)
